@@ -179,6 +179,9 @@
         //shorthand que no se agrande, que no se achiqué y que tenga 3 de basis, tamaño base
         align-content: center;
         background-color: goldenrod;
+        @media (min-width:768px) {
+            
+        }
         :hover{
             cursor: pointer;
         }
