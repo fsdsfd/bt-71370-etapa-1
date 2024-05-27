@@ -1,0 +1,134 @@
+.card {
+    width: 220px;
+    max-width: 300px;
+    height: 400px;
+    //background-color: rgb(88, 11, 82);
+    background: linear-gradient(0deg,rgb(88, 11, 82) 10%, #6e1880 79%);
+    overflow: hidden;
+    transition: background-color 1.5s ease-in-out;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 30px 15px 17px -5px rgba(0,0,0,0.75); // css generator
+    &__image-container {
+        height: 200px;
+        
+        overflow: hidden;
+    }
+    &__image{
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    &__image-container{
+        position: relative;
+        transition: 
+        filter 1.5s ease-in-out,
+        transform 1.5s ease-in-out,
+        translate 1.5s ease-in-out;
+        object-fit: cover;
+        filter: blur(.5px) brightness(80%) contrast(80%);
+        z-index: 1;
+        clip-path: polygon(0 0, 100% 0, 100% 200px, 0 180px);
+    }
+    &__content{
+        position: absolute;
+        width: 220px;
+        max-width: 220px;
+        height: 9rem;
+        color: #BBBBBB;
+        background: linear-gradient(0deg,rgb(88, 11, 82) 10%, #6e1880 79%);
+        transition: transform 1.5s ease-in-out,
+        color 1.5s ease-in-out;
+        z-index: 2;
+    }
+    &:nth-child(5n + 2) &__content{
+        background-image:linear-gradient(to right, rgb(255, 255, 255), rgb(255, 230, 0));
+    }
+    &:nth-child(5n + 2){
+        background-image:linear-gradient(to right, rgb(255, 255, 255), rgb(255, 230, 0));
+    }
+    //MOBILE CONFIGURATION
+    @media(max-width:768px){
+        &__image-container{
+            position: relative;
+            transition: 
+            filter 1.5s ease-in-out,
+            transform 1.5s ease-in-out,
+            translate 1.5s ease-in-out;
+            object-fit: cover;
+            filter: blur(.2px) brightness(90%) contrast(90%);
+            z-index: 1;
+            clip-path: polygon(0 0, 100% 0, 100% 200px, 0 180px);
+        }
+        &__image-container:hover{
+            transition:
+            filter 1.5s ease-in-out, 
+            scale 1.5s ease-in-out,
+            transform 1.5s ease-in-out,
+            translate 1.5s ease-in-out;
+            background-color: rgb(103, 0, 199);
+            transform: scale(2.3);
+            filter: blur(0px) brightness(100%) contrast(100%);
+            translate: 0 5rem;
+            z-index: 1;
+            
+        }
+         &:hover &__content{
+            transform: translateY(40%);
+         }
+        &:hover:nth-child(5n + 2) &__content{
+            color: #333;
+        }
+    }
+    // DESKTOP CONFIGURATION
+    @media(min-width:768px){
+        &__image-container{
+                    transition:
+        filter 1.5s ease-in-out, 
+        scale 1.5s ease-in-out,
+        transform 1.5s ease-in-out,
+        translate 1.5s ease-in-out,
+        clip-path 1.5s ease-in-out;
+        }
+    &__image-container:hover{
+        
+        // transition:
+        // filter 1.5s ease-in-out, 
+        // scale 1.5s ease-in-out,
+        // transform 1.5s ease-in-out,
+        // translate 1.5s ease-in-out,
+        // clip-path 1.5s ease-in-out;
+        background-color: rgb(103, 0, 199);
+        transform: scale(2.3);
+        filter: blur(0px) brightness(100%) contrast(100%);
+        translate: 0 5rem;
+        z-index: 1;
+        clip-path: polygon(0 0, 100% 0, 100% 200px, 0 200px);
+    }
+    &:hover &__content{
+        color: white;
+        z-index: 2;
+    }
+    &:hover:not(:nth-child(5n + 1)) &__content{
+        transform: translateX(-100%);
+    }
+     &:hover:nth-child(5n + 1) &__content{
+        transform: translateY(103%);
+     }
+    &:hover:nth-child(5n + 2) &__content{
+        color: #333;
+    }
+    &:hover &__image-container,
+    &:hover &__content:hover &__image-container {
+        cursor: pointer;
+      filter: blur(0px) brightness(100%) contrast(100%);
+      transform: scale(2.3);
+    }
+}
+}
+.section-cards{
+    height: 100%;
+    &__header{
+        padding:1.5rem;
+    }
+}

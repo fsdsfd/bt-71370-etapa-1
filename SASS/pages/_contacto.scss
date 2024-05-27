@@ -1,0 +1,170 @@
+//BODY}
+.body-contacto{
+    background-image: url(/img/gif-fondo.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+//DESKTOP CONFIGURATION
+//MAIN
+
+// MOBILE FIRST
+
+@media(max-width:768px){
+    .main__titulo{
+        width: 100%;
+        height: 2rem;
+        margin: 20px auto;
+        text-align: center;
+        align-items: center;
+        font-size: 1.4rem;
+        position: relative;
+        text-shadow: 6px 2px 5px rgba(0,0,0,0.56);
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        color: white;
+
+    }
+    .main-contacto{
+        width: 100%;
+        height: 75%;
+        gap: 1rem;
+        border-radius: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px auto;
+        text-align: center;
+        gap: 1rem;
+        justify-content: center;
+        font-size: 1.2rem;
+        background-image: linear-gradient(27deg,#dddddd, #FFFF);
+
+        &__legend{
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            font-size: 1.4rem;
+            padding: 1rem;
+        }
+    }
+    .form-contacto{
+
+        display: flex;
+        flex-direction: column;
+
+        &__label{
+            margin: .5rem;
+        }
+        &__input{
+            align-self: center;
+            width: 90%;
+            height: 2rem;
+            border-radius: 2rem;
+            margin: .5rem;
+         }
+        &__textarea{
+            align-self: center; 
+            width: 90%;
+            height: 50%;
+            border-radius: 1.2rem;
+            margin: .5rem;
+        }
+    
+        &__button{
+            align-self:center;
+            font-size: 1.3rem;
+            margin:1.0rem;
+            width: 70%;
+            padding: 1rem;
+            background-color: #D63D01;
+            border-radius: 1.5rem;
+
+        }
+        //FOCUS
+        &__input:focus{
+            background-image: radial-gradient( white,#fcf5ff);
+            color: black;
+          }
+          &__textarea:focus{
+            background-image: radial-gradient( white,#fcf5ff);
+            color: black;
+          }
+          &__button:focus{
+            background-color:#A32E00;
+          }
+    }
+
+}
+@media(min-width:768px){
+    .main__titulo{
+        width: 80%;
+        height: 3rem;
+        font-size: 2rem;
+        text-shadow: 6px 2px 5px rgba(0,0,0,0.56);
+        margin-top: 2rem;
+        margin-left: 2rem;
+        color: white;
+    }
+    .main-contacto{
+        border-radius: 2rem;
+        width: 75%;
+        height: 120%;
+        gap: 1rem;
+        margin: 20px auto;
+        text-align: center;
+        align-items: center;
+        gap: 1rem;
+        justify-content: center;
+        background-image: linear-gradient(27deg,#dddddd, #FFFF);
+        &__legend{
+           
+            font-size: 2rem;
+            padding-top: 1rem;
+        }
+    }
+    .form-contacto{
+        display: flex;
+        flex-direction: column;
+        &__label{
+            margin: 1.5rem;
+        }
+        &__input{
+            align-self: center;
+            width: 90%;
+            height: 2rem;
+            border-radius: 2rem;
+            margin: 1.5rem;
+         }
+        &__textarea{
+            align-self: center; 
+            width: 90%;
+            height: 50%;
+            border-radius: 1.2rem;
+            margin: 2rem;
+        }
+    
+        &__button{
+            
+            align-self:center;
+            font-size: 1.2rem;
+            margin:1.0rem;
+            width: 50%;
+            padding: 1rem;
+            background-color: #D63D01;
+            border-radius: 1.5rem;
+
+        }
+        //FOCUS
+        &__input:focus{
+            background-image: radial-gradient( white,#fcf5ff);
+            color: black;
+          }
+          &__textarea:focus{
+            background-image: radial-gradient( white,#fcf5ff);
+            color: black;
+          }
+          &__button:focus{
+            background-color:#A32E00;
+          }
+}
+}

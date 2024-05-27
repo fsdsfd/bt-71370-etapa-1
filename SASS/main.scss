@@ -1,0 +1,28 @@
+@import 'base/typography';
+@import 'base/resets';
+@import 'components/_card';
+@import 'layout/_header';
+@import 'pages/_index';
+@import 'pages/_contacto';
+@import 'pages/_nosotros';
+@import 'pages/_alta';
+/* Estructura 7 en 1 
+! base-> todos los estilos de inicio 
+resets.scss
+typography.scss
+! components
+buttons.scss
+slider.scss
+! layout
+! components
+
+footer.scss
+!pages
+home.scss
+contacto.scss
+Una manera
+
+!vendores, librerias externas al proyecto
+boostrap.scss
+normalize.scss
+*/
