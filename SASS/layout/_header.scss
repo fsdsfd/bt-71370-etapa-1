@@ -95,6 +95,7 @@
             color: white;
             font-size: .8rem;
             text-align: center;
+            border-radius: .3rem;
         }
         &__form-search{
             background-color: rgba(255, 255, 255, 0.904)	;
@@ -104,6 +105,7 @@
         &__form-submit{
             background-color: darkslategray;
             color: white;
+            border-radius: .4rem;
         }
         &__logo-container{
             display: flex;
