@@ -1,7 +1,7 @@
 .card {
     width: 220px;
     
-    height: 400px;
+    height: 420px;
     //background-color: rgb(88, 11, 82);
     background: linear-gradient(0deg,rgb(88, 11, 82) 10%, #6e1880 79%);
     overflow: hidden;
@@ -33,51 +33,76 @@
         position: absolute;
         width: 220px;
         max-width: 220px;
-        height: 10rem;
+        height: 13.5rem;
         color: #BBBBBB;
         background: linear-gradient(0deg,rgb(88, 11, 82) 10%, #6e1880 79%);
         transition: transform 1.5s ease-in-out,
         color 1.5s ease-in-out;
         // z-index: 1;
     }
-    &:nth-child(5n + 2) &__content{
-        background-image:linear-gradient(to right, rgb(255, 255, 255), rgb(255, 230, 0));
+    &__image-icon{
+        display: flex;
+        justify-content: space-between;
     }
-    &:nth-child(5n + 2){
-        background-image:linear-gradient(to right, rgb(255, 255, 255), rgb(255, 230, 0));
+    &__like{
+        scale: .6;
+        height: 3rem;
+        margin-top: .35rem;
+        margin-right: 1rem;
+    }
+    &__cart{
+        height: 3rem;
+        scale: .9;
+        margin-top: .3rem;
+        margin-left: 1rem;
+        margin-right: 5rem;
     }
     //MOBILE CONFIGURATION
     @media(max-width:568px){
+
         &__image-container{
-            position: relative;
-            transition: 
-            filter 1.5s ease-in-out,
-            transform 1.5s ease-in-out,
-            translate 1.5s ease-in-out;
-            object-fit: cover;
-            filter: blur(.2px) brightness(90%) contrast(90%);
-            // z-index: 1;
-            clip-path: polygon(0 0, 100% 0, 100% 200px, 0 180px);
+        transition:
+        filter 1.5s ease-in-out, 
+        scale 1.5s ease-in-out,
+        transform 1.5s ease-in-out,
+        translate 1.5s ease-in-out,
+        clip-path 1.5s ease-in-out;
+        scale: 1.01;
         }
-        &__image-container:hover{
-            transition:
-            filter 1.5s ease-in-out, 
-            scale 1.5s ease-in-out,
-            transform 1.5s ease-in-out,
-            translate 1.5s ease-in-out;
-            background-color: rgb(103, 0, 199);
-            transform: scale(2.3);
-            filter: blur(0px) brightness(100%) contrast(100%);
-            translate: 0 5rem;
-            // z-index: 1;
-            
-        }
-         &:hover &__content{
-            transform: translateY(40%);
-         }
-        &:hover:nth-child(5n + 2) &__content{
-            color: #333;
-        }
+    &__cart, &__like{
+        transition:
+        scale 1.5s ease-in-out,
+        transform 1.5s ease-in-out,
+        translate 1.5s ease-in-out;
+        filter: grayscale(0%), brightness(100%), contrast(100%);
+    }
+    &__image-container:hover{
+        
+        // transition:
+        // filter 1.5s ease-in-out, 
+        // scale 1.5s ease-in-out,
+        // transform 1.5s ease-in-out,
+        // translate 1.5s ease-in-out,
+        // clip-path 1.5s ease-in-out;
+        filter: blur(0px) brightness(100%) contrast(100%);
+
+        // z-index: 1;
+        clip-path: polygon(0 0, 100% 0, 100% 200px, 0 200px);
+    }
+    &:hover &__content{
+        color: white;
+        transform: translateY(10%) scale(1.05);
+    }
+    &:hover &__image-container,
+    &:hover &__content:hover &__image-container {
+        cursor: pointer;
+      filter: blur(0px) brightness(100%) contrast(100%);
+      transform: scale(1.15);
+    }
+    &:hover &__like, &:hover &__cart{
+        transform: translateY(15%) scale(1);
+        
+    }
     }
     // DESKTOP CONFIGURATION
     @media(min-width:768px){
@@ -98,19 +123,21 @@
         // transform 1.5s ease-in-out,
         // translate 1.5s ease-in-out,
         // clip-path 1.5s ease-in-out;
-        background-color: rgb(103, 0, 199);
         filter: blur(0px) brightness(100%) contrast(100%);
 
         // z-index: 1;
         clip-path: polygon(0 0, 100% 0, 100% 200px, 0 200px);
     }
+    &__cart, &__like{
+        transition:
+        scale 1.5s ease-in-out,
+        transform 1.5s ease-in-out,
+        translate 1.5s ease-in-out;
+        filter: grayscale(0%), brightness(100%), contrast(100%);
+    }
     &:hover &__content{
         color: white;
         transform: translateY(10%) scale(1.1);
-    }
-
-    &:hover:nth-child(5n + 2) &__content{
-        color: #333;
     }
     &:hover &__image-container,
     &:hover &__content:hover &__image-container {
@@ -118,6 +145,12 @@
       filter: blur(0px) brightness(100%) contrast(100%);
       transform: scale(1.1);
     }
+    &:hover &__like, &:hover &__cart{
+        transform: translateY(15%) scale(1);
+        background-color: none;
+    }
+
+
 }
 }
 .section-cards{
