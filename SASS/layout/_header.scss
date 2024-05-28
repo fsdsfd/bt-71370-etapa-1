@@ -33,7 +33,7 @@
         list-style-type: none;
         justify-content: center;
         
-        @media (max-width: 768px) {
+        @media (max-width: 576px) {
             & {
                 flex-direction: column;
             }
@@ -53,7 +53,7 @@
         text-decoration: none;
     }
     
-    @media (max-width: 768px) {
+    @media (max-width: 576px) {
         & { /* .nav-bar */
             display: none;
         }
@@ -82,7 +82,7 @@
             100% {background-color: rgb(83, 3, 99);}
           }
     }
-    @media (max-width:768px) {
+    @media (max-width:576px) {
         &__form-container{
             display: flex;
             flex-basis:100%;
@@ -105,7 +105,6 @@
             left: .5rem;
         }
         &__form-submit{
-
             position: relative;
             left: .1rem;
             top: .02em;
@@ -191,7 +190,7 @@
         
     }    
 }
-@media(max-width:768px){
+@media(max-width:576px){
     &__icon{
         margin-left: .1rem;
         width: 80%;
@@ -253,7 +252,7 @@
         bottom: .8rem;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 576px) {
         & { /* .menu-toogle */
             display: block;
         }
@@ -282,7 +281,7 @@
 }
 }
 //FOOTER
-@media(max-width:768px){
+@media(max-width:576px){
     .footer{
         background-color: #00439C;
         color: white;
