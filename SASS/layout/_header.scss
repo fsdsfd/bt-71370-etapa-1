@@ -90,31 +90,40 @@
             padding: 1rem;
             background: linear-gradient(0deg,#492550 2%, #000000 99%);
         }
-        &__form-label{
-            background-color: rgb(77, 12, 55);
-            color: white;
-            font-size: .8rem;
-            text-align: center;
-            border-radius: .3rem;
-        }
+        // &__form-label{
+        //     background-color: rgb(77, 12, 55);
+        //     color: white;
+        //     font-size: .8rem;
+        //     text-align: center;
+        //     border-radius: .3rem;
+        // }
         &__form-search{
             background-color: rgba(255, 255, 255, 0.904)	;
-            width: 80%;
+            width: 100%;
             border-radius: 10%;
+            position: relative;
+            left: .5rem;
         }
         &__form-submit{
 
             position: relative;
-            top: .15em;
+            left: .1rem;
+            top: .02em;
             border-radius: 5px;
             background-image: url(/public/img/svg-icons/search.svg);
             background-size: cover;
+            padding-left: 2rem;
+            height: 2.5rem;
             width: 2.5rem;
+            scale: .92;
+            border: none;
+            background-color: #EAE8EA;
         }
         &__logo-container{
             display: flex;
             justify-content: center;
             width: 20%;
+            height: 4.5rem;
         }
         &__logo{
             background-size: cover;
