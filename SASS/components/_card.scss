@@ -3,8 +3,7 @@
     
     height: 420px;
     //background-color: rgb(88, 11, 82);
-    background: linear-gradient(0deg,rgb(88, 11, 82) 10%, #6e1880 79%);
-    overflow: hidden;
+    background: linear-gradient(0deg,#195173 10%, #22789F 79%);    overflow: hidden;
     transition: background-color 1.5s ease-in-out;
     border-top-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -35,7 +34,7 @@
         max-width: 220px;
         height: 13.5rem;
         color: #BBBBBB;
-        background: linear-gradient(0deg,rgb(88, 11, 82) 10%, #6e1880 79%);
+        background: linear-gradient(0deg,#195173 10%, #22789F 79%);
         transition: transform 1.5s ease-in-out,
         color 1.5s ease-in-out;
         // z-index: 1;
