@@ -1,6 +1,6 @@
 //BODY}
 .body-contacto{
-    background-image: url(/img/gif-fondo.gif);
+    background-image: url(/img/gif-fondo-1.gif);
     background-size: cover;
     background-position: center;
 }
@@ -10,7 +10,7 @@
 
 // MOBILE FIRST
 
-@media(max-width:768px){
+@media(max-width:576px){
     .main__titulo{
         width: 100%;
         height: 2rem;

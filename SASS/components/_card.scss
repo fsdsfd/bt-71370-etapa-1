@@ -48,6 +48,7 @@
         height: 3rem;
         margin-top: .35rem;
         margin-right: 1rem;
+        text-decoration: none;
     }
     &__cart{
         height: 3rem;
@@ -58,7 +59,7 @@
         text-decoration: none;
     }
     //MOBILE CONFIGURATION
-    @media(max-width:568px){
+    @media(max-width:576px){
 
         &__image-container{
         transition:
@@ -76,6 +77,7 @@
         translate 1.5s ease-in-out;
         filter: grayscale(0%), brightness(100%), contrast(100%);
     }
+
     &__image-container:hover{
         
         // transition:
@@ -134,6 +136,11 @@
         transform 1.5s ease-in-out,
         translate 1.5s ease-in-out;
         filter: grayscale(0%), brightness(100%), contrast(100%);
+    }
+    &__a{
+        display: inline-block;
+        width: 2rem;
+        margin-left: 1rem;
     }
     &:hover &__content{
         color: white;
