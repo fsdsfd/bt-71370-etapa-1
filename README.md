@@ -9,4 +9,4 @@ La música que está en el hover de cada card es la música individual de cada u
 Link de netlify adicional:
 # https://proyecto-integrador-parte-1.netlify.app
 Link de git-hub:
-https://github.com/fsdsfd/bt-71370-etapa-1
+# https://github.com/fsdsfd/bt-71370-etapa-1
