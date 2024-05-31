@@ -8,5 +8,6 @@ página aparte.
 La música que está en el hover de cada card es la música individual de cada uno de los juegos
 Link de netlify adicional:
 # https://proyecto-integrador-parte-1.netlify.app
+Las páginas no funcionan ya que para ello tendría que crear un netlify para cada producto, pero desde el zip se ve
 Link de git-hub:
 # https://github.com/fsdsfd/bt-71370-etapa-1
