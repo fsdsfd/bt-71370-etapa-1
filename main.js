@@ -1,4 +1,5 @@
 import './SASS/main.scss'
+// AUDIO CARDS
 document.querySelectorAll('.card__image').forEach(function(image) {
     const audioId = image.getAttribute('data-audio');
     const audioElement = document.getElementById(audioId);

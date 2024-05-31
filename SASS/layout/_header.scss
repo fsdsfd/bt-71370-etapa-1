@@ -2,7 +2,7 @@
 .main-header{
     display: flex;
     flex-direction: column;
-    @media (max-width: 768px) {
+    @media (max-width: 576px) {
         & { /* .main-header */
             flex-direction: column-reverse;
         }
