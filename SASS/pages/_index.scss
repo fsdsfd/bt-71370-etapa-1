@@ -1,6 +1,5 @@
 .section-cards{
-     background-color: #f1f2f3;
-
+    transition: background-image 1s ease-in-out;
 }
 .cards-container{
     display: flex;
@@ -9,5 +8,6 @@
     justify-content: center;
     position: static;
     width: 100%;
-    background: linear-gradient(0deg,#000000 0%, #1B2838 99%);
+    transition: background-image 1s ease-in-out;
+    //background: linear-gradient(0deg,#000000 0%, #1B2838 99%);
 }

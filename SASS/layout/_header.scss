@@ -302,6 +302,10 @@
                 color: white;
                 margin: .3rem;
                 text-decoration: none;
+                transition: 0.3s ease-in-out;
+                &__link:hover{
+                    transform: scale(1.05);
+                }
             &__hr{
                 border: 2px solid white;
             }
@@ -343,13 +347,23 @@
             }
             &__acerca-de__a{
                 height: 3rem;
+                width: 10em;
                 color: white;
                 margin: .3rem;
                 text-decoration: none;
+                transition: 0.3s ease-in-out;
+                &__link:hover{
+                    transform: scale(1.05);
+                }
             &__hr{
                 border: 2px solid white;
             }
+
             }
+        }
+        &__iconos-contenedor:hover{
+
+                transform: scale(1.05);
         }
         &__iconos{
             filter: invert(100%);
@@ -367,4 +381,5 @@
             }
         }   
     }
+
 }
