@@ -11,3 +11,59 @@
     transition: background-image 1s ease-in-out;
     //background: linear-gradient(0deg,#000000 0%, #1B2838 99%);
 }
+// CARROUSEL DE IMAGENES
+.carousel {
+    position: relative;
+    width: 30%;
+    margin: auto;
+    overflow: hidden;
+    &__imagenes {
+        display: flex;
+        transition: transform 0.9s ease;
+      }
+
+      &__imagen{
+        min-width: 50%;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center; /* Centrar el contenido */
+        align-items: center;    /* Centrar verticalmente */
+        img {
+            width: 60%; /* Ajusta el tamaño según sea necesario */
+            height: auto;
+            display: block;
+          }
+    }
+    &__botones {
+        position: absolute;
+        top: 50%;
+        right:1rem;
+        left:1rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+        
+      }
+        .carousel-button {
+    background-color: #18090b;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  &__imagen-boton{
+    width: 2rem;
+    &__1{
+        
+    }
+  }
+  }
+
+
+
+
+
+
+
+

@@ -93,7 +93,31 @@
             background-color:#A32E00;
           }
     }
-
+.mapa{
+    width: 100%;
+    background-image: url(/public/img/fondo-mapa-celular.png);
+    background-size: 100% 105%;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    letter-spacing: .1em;
+    margin-top: 5rem;
+    padding: 1rem;
+    color: #f3f3f3;
+    margin-bottom: 2rem;
+    &__h2{
+        font-size: 1.8em;
+        
+    }
+    &__p{ 
+        margin-top: .2rem;
+        font-size: 1.2rem;
+    }
+    &__iframe{
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+}
 }
 @media(min-width:768px){
     .main__titulo{
@@ -166,5 +190,34 @@
           &__button:focus{
             background-color:#A32E00;
           }
+
 }
+.mapa{
+        width: 100%;
+        height: 120%;
+        background-image: url(/img/fondo-mapa-desktop.png);
+        background-size: 100% 110%;
+        background-position: center;
+        background-repeat: no-repeat;
+        text-align: center;
+        letter-spacing: .1em;
+        margin-top: 5rem;
+        padding: 1rem;
+        color: #f3f3f3;
+        margin-bottom: 2rem;
+        &__h2{
+            font-size: 1.8em;
+            
+        }
+        &__p{ 
+            margin-top: .2rem;
+            font-size: 1.2rem;
+        }
+        &__iframe{
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+            position: relative;
+            top: 10rem;
+        }
+    }
 }
