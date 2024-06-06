@@ -12,11 +12,35 @@
     //background: linear-gradient(0deg,#000000 0%, #1B2838 99%);
 }
 // CARROUSEL DE IMAGENES
+@media(max-width:576px){
+  .carousel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:3rem;
+    margin-bottom:3rem;
+  
+    width: 100%;
+    &__titulo{
+      color: rgb(235, 235, 235);
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    &__sponsors{
+      border: .5px solid #dfdf;
+     
+      height: 30rem;
+    }
+  }
+  }
+
 @media(min-width:768px){
 .carousel{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: inherit;
   align-items: center;
   margin-top:3rem;
   margin-bottom:3rem;
@@ -24,11 +48,20 @@
   width: 100%;
   &__titulo{
     color: rgb(235, 235, 235);
-    margin-bottom: 2rem;
+    
+  }
+  &__tele{
+    display: relative;
+    width: 70%;
   }
   &__sponsors{
-    width: 86%;
-    height: 30rem;
-  }
+    position: absolute;
+    margin-top: 18rem;
+    left: 16rem;
+    width: 50%;
+    height: 33rem;
+    border: .5px solid #dfdf;
+    clip-path: polygon(0% 15%, 5% 4%, 16% 0, 84% 0, 96% 4%, 100% 15%, 100% 85%, 97% 96%, 86% 98%, 16% 97%, 6% 93%, 2% 84%);
+    }
 }
 }
