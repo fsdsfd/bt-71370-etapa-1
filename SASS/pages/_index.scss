@@ -27,11 +27,19 @@
       margin-bottom: 2rem;
       text-align: center;
     }
-    &__sponsors{
-      border: .5px solid #dfdf;
-     
-      height: 30rem;
+    &__tele{
+      display: relative;
+      width: 70%;
     }
+    &__sponsors{
+      position: absolute;
+      margin-top: 5rem;
+      left: 4.6rem;
+      width: 51%;
+      height: 10rem;
+      border: .5px solid #dfdf;
+      clip-path: polygon(0% 15%, 5% 4%, 16% 0, 84% 0, 96% 4%, 100% 15%, 100% 85%, 97% 96%, 86% 98%, 16% 97%, 6% 93%, 2% 84%);
+      }
   }
   }
 
@@ -52,14 +60,14 @@
   }
   &__tele{
     display: relative;
-    width: 70%;
+    width: 40%;
   }
   &__sponsors{
     position: absolute;
-    margin-top: 18rem;
-    left: 16rem;
-    width: 50%;
-    height: 33rem;
+    margin-top: 10rem;
+    left: 27rem;
+    width: 29%;
+    height: 19rem;
     border: .5px solid #dfdf;
     clip-path: polygon(0% 15%, 5% 4%, 16% 0, 84% 0, 96% 4%, 100% 15%, 100% 85%, 97% 96%, 86% 98%, 16% 97%, 6% 93%, 2% 84%);
     }
