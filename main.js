@@ -54,7 +54,7 @@ let score = 0;
 let gameOver = false;
 let gameStarted = false;
 let startTime;
-let obstacleSpeed = 10;
+let obstacleSpeed = 5;
 document.addEventListener('keydown', function(e) {
     if (e.code === 'Space' && !cube.isJumping && gameStarted) {
         cube.dy = cube.jumpStrength;
