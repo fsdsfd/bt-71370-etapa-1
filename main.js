@@ -62,13 +62,11 @@ document.addEventListener('keydown', function(e) {
     }
 });
 canvas.addEventListener('click', function() {
-    // Si el juego no ha comenzado, inicia el juego
     if (!gameStarted) {
         gameStarted = true;
         startTime = new Date().getTime();
         requestAnimationFrame(updateGame);
     } else {
-        // Si el juego ya ha comenzado, hace que el cubo salte
         jumpCube();
     }
 });
@@ -126,21 +124,16 @@ function drawTriangle(x, y, width, height) {
 }
 
 function detectCollision(cube, obstacle) {
-    // Puntos de la hitbox del cubo
     const cubePoints = [
         { x: cube.x, y: cube.y + cube.height },
         { x: cube.x + cube.width, y: cube.y + cube.height },
         { x: cube.x + cube.width / 2, y: cube.y }
     ];
-
-    // Puntos de la hitbox del triángulo
     const obstaclePoints = [
         { x: obstacle.x, y: obstacle.y + obstacle.height },
         { x: obstacle.x + obstacleWidth / 2, y: obstacle.y },
         { x: obstacle.x + obstacleWidth, y: obstacle.y + obstacle.height }
     ];
-
-    // Verificar si algún punto del cubo está dentro del triángulo
     for (let cubePoint of cubePoints) {
         let inside = false;
         for (let i = 0, j = 2; i < 3; j = i++) {
@@ -214,12 +207,8 @@ function updateGame() {
     }
 }
 window.addEventListener("keydown", function(e) {
-    // Verificar si la tecla presionada es la barra espaciadora
     if(e.key === " " || e.key === "Spacebar") {
-        // Evitar que el evento de teclado se propague
-        e.preventDefault();
-        
-        // Lógica de salto del cubo aquí
+        e.preventDefault();        
         if (!cube.isJumping && gameStarted) {
             cube.dy = cube.jumpStrength;
             cube.isJumping = true;
@@ -231,7 +220,7 @@ if(score == 1){
     ctx.fillText('¡Ganaste!');
     obstacleSpeed = 0
 }
-// Mostrar mensaje de inicio
+
 ctx.fillStyle = 'blue';
 ctx.font = '30px Arial';
 ctx.fillText('Haz clic para empezar', canvas.width / 2 - 150, canvas.height / 2);
