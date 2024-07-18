@@ -1,0 +1,24 @@
+{{#each productos}}
+<div class="card">
+            <article class="card__article">
+              <div class="card__image-container">
+                <img src="{{foto}}" alt="{{nombre}}" class="card__image"> <!--data-audio="{{dataAudio}}">-->
+                {{!-- <audio src="{{audio}}" id="{{dataAudio}}"></audio> --}}
+              </div>
+              <div class="card__precio">{{precio}}</div>
+              <div class="card__content">
+                <h2 class="card__heading">{{nombre}}</h2>
+                <div class="card__description">
+                  <p>{{descripcion}}</p>
+                  <p class="card__precio__p">{{precio}}</p>
+                  <div class="card__icon-container">
+                    <a href="views-productos/yakuza.html">
+                      <img src="/img/svg-icons/cart_card.svg" alt="Añadir al carrito" class="card__cart">  
+                    </a>                    
+                    <img src="/img/svg-icons/me-gusta.svg" alt="Añadir a me gusta" class="card__like">
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div> <!-- .card -->
+          {{/each}}

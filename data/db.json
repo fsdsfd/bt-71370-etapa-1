@@ -1,0 +1,10 @@
+{
+    "productos": [
+        
+        { "id": 1, "nombre": "Dark Souls 3", "foto": "img/Dark-souls-3.webp", "descripcion": "El videojuego del genero Souls más vendido, Dark Souls 3, ya disponible", "audio" : "img/audios/Dark-souls-3.mp3","dataAudio" : "Dark-souls-3", "precio": 222.20},
+        { "id": 2, "nombre": "Yakuza 0", "foto": "img/yakuza-0.webp", "descripcion": "Yakuza 0, ya disponible", "audio" : "img/audios/Yakuza-0.mp3", "dataAudio" : "yakuza-0", "precio": 333.30},
+        { "id": 3, "nombre": "Tekken 1", "foto": "img/tekken-1.jpg", "descripcion": "Tekken 1, el videojuego de combate, ya disponible", "audio" : "img/audios/Tekken-1.mp3", "dataAudio" : "Tekken-1", "precio": 444.40},
+        { "id": 4, "nombre": "Mortal Kombat 1 ", "foto": "img/mortal-kombat-1.jpg", "descripcion": "Mortal kombat 1 ya disponible", "audio" : "img/audios/Mortal-kombat-1.mp3", "dataAudio" : "mortal-kombat-1", "precio": 444.40},
+        { "id": 5, "nombre": "Read Dead Redemption 2", "foto": "img/read-dead-redemption-2.avif", "descripcion": "Read Dead Redemption 2, ya disponible", "audio" : "img/audios/rdr2.mp3",  "dataAudio" : "rdr2", "precio": 444.40}
+    ]
+}

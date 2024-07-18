@@ -1,7 +1,7 @@
 .card {
     width: 220px;
     margin: .5rem;
-    height: 420px;
+    height: 230px;
     //background-color: rgb(88, 11, 82);
     background: linear-gradient(0deg,#195173 10%, #22789F 79%);    overflow: hidden;
     transition: background-color 1.5s ease-in-out;
@@ -37,7 +37,6 @@
         background: linear-gradient(0deg,#195173 10%, #22789F 79%);
         transition: transform 1.5s ease-in-out,
         color 1.5s ease-in-out;
-        // z-index: 1;
     }
     &__image-icon{
         display: flex;
@@ -58,10 +57,22 @@
         margin-right: 5rem;
         text-decoration: none;
     }
-
+    &__precio{
+        color: #9DEE11;
+        text-align: center;
+        font-size: 1.2rem;
+        font-style: bold;
+        &__p{
+            color: #9DEE11;
+            font-size: 1.2rem;
+            margin-top: .5rem;
+        }
+    }
     //MOBILE CONFIGURATION
     @media(max-width:576px){
-
+        &__content{
+            position: relative;
+        }
         &__image-container{
         transition:
         filter 1.5s ease-in-out, 
@@ -109,6 +120,21 @@
     }
     // DESKTOP CONFIGURATION
     @media(min-width:768px){
+
+        &__content{
+            opacity: 0%;
+            transition: opacity 1.5s ease-in-out;
+            z-index: 1;
+            display: none;
+        }
+        .card:hover &__content{
+            opacity: 100%;
+            transition: opacity 1.5s ease-in-out;
+            display: block;
+        }
+        .card:hover &__precio{
+            display:none
+        }
         &__image-container{
         transition:
         filter 1.5s ease-in-out, 

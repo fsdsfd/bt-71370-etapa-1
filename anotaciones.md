@@ -9,3 +9,4 @@ Después se va a un wireframe (wireframe.cc es la página)
  que es como se vería la estructura visual del sitio 
  Y de ahí opcionalmente, se puede ir a figma, miro.com o adobe XD, que es una manera de hacer una página de una manera más interativa
  o 
+ npm i json-server@0.17.4 -D

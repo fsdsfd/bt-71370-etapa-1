@@ -79,9 +79,21 @@ canvas {
     height: 15rem;
         border: 1px solid rgb(247, 247, 247);
     }
-
+.columnas-nosotros{
+        display: none;
+    }
+.columnas-nosotros-celular{
+    color: rgb(255, 241, 221);
+    &__titulo{
+        text-align: center;
+    }
+    &__parrafo{
+        margin-left: 1rem;
+        font-size: 1.2rem;
+    }
 }
-@media(min-width:768px){
+}
+@media(min-width:576px){
     .main-nosotros{
         display: flex;
         flex-wrap: wrap;
@@ -145,6 +157,30 @@ canvas {
     width: 60%;
         border: 1px solid rgb(247, 247, 247);
     }
-
-}
+    .columnas-nosotros{
+        display: flex;
+        color: rgb(255, 241, 221);
+        width: 100%;
+        justify-content: space-around;
+        &__columna{
+            flex-direction: column;
+            width: 25%;
+            text-align: center;
+        }
+        &__titulo{
+            width: 25rem;
+            font-size: 2.5rem;
+            position: relative;
+            right: 2rem;
+        }
+        &__parrafo{
+            padding: 1rem;
+            font-size: 1.2rem;
+        }
+    }
+    .columnas-nosotros-celular{
+        display: none;
+        visibility: hidden;
+        }
+    }
 
