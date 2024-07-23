@@ -1,10 +1,88 @@
 {
-    "productos": [
-        
-        { "id": 1, "nombre": "Dark Souls 3", "foto": "img/Dark-souls-3.webp", "descripcion": "El videojuego del genero Souls más vendido, Dark Souls 3, ya disponible", "audio" : "img/audios/Dark-souls-3.mp3","dataAudio" : "Dark-souls-3", "precio": 222.20},
-        { "id": 2, "nombre": "Yakuza 0", "foto": "img/yakuza-0.webp", "descripcion": "Yakuza 0, ya disponible", "audio" : "img/audios/Yakuza-0.mp3", "dataAudio" : "yakuza-0", "precio": 333.30},
-        { "id": 3, "nombre": "Tekken 1", "foto": "img/tekken-1.jpg", "descripcion": "Tekken 1, el videojuego de combate, ya disponible", "audio" : "img/audios/Tekken-1.mp3", "dataAudio" : "Tekken-1", "precio": 444.40},
-        { "id": 4, "nombre": "Mortal Kombat 1 ", "foto": "img/mortal-kombat-1.jpg", "descripcion": "Mortal kombat 1 ya disponible", "audio" : "img/audios/Mortal-kombat-1.mp3", "dataAudio" : "mortal-kombat-1", "precio": 444.40},
-        { "id": 5, "nombre": "Read Dead Redemption 2", "foto": "img/read-dead-redemption-2.avif", "descripcion": "Read Dead Redemption 2, ya disponible", "audio" : "img/audios/rdr2.mp3",  "dataAudio" : "rdr2", "precio": 444.40}
-    ]
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Dark Souls 3",
+      "foto": "img/Dark-souls-3.webp",
+      "descripcion": "El videojuego del genero Souls más vendido, Dark Souls 3, ya disponible",
+      "precio": 222.2
+    },
+    {
+      "id": 2,
+      "nombre": "Yakuza 0",
+      "foto": "img/yakuza-0.webp",
+      "descripcion": "Yakuza 0, ya disponible",
+      "precio": 333.3
+    },
+    {
+      "id": 3,
+      "nombre": "Tekken 1",
+      "foto": "img/tekken-1.jpg",
+      "descripcion": "Tekken 1, el videojuego de combate, ya disponible",
+      "precio": 444.4
+    },
+    {
+      "id": 4,
+      "nombre": "Mortal Kombat 1 ",
+      "foto": "img/mortal-kombat-1.jpg",
+      "descripcion": "Mortal kombat 1 ya disponible",
+      "precio": 444.4
+    },
+    {
+      "id": 5,
+      "nombre": "Read Dead Redemption 2",
+      "foto": "img/read-dead-redemption-2.avif",
+      "descripcion": "Read Dead Redemption 2, ya disponible",
+      "precio": 444.4
+    },
+    {
+      "id": 6,
+      "nombre": "Grand Theft Auto 6",
+      "foto": "img/gta-6.avif",
+      "descripcion": "Grand Theft Auto 6, ya disponible",
+      "precio": 444.4
+    },
+    {
+      "id": 8,
+      "nombre": "Hollow Knight: Silksong",
+      "foto": "img/Hollow-knight-silksong.webp",
+      "descripcion": "Hollow Knight: Silksong, ya disponible",
+      "precio": 444.4
+    },
+    {
+      "id": 9,
+      "nombre": "Sekiro: Shadows Die Twice",
+      "foto": "img/Sekiro.jpg",
+      "descripcion": "Sekiro: Shadows Die Twice, ya disponible en todas las plataformas de streaming",
+      "precio": 444.4
+    },
+    {
+      "id": 9,
+      "nombre": "Rust",
+      "foto": "img/Rust.avif",
+      "descripcion": "Read Dead Redemption 2, ya disponible.",
+      "precio": 444.4
+    },
+    {
+      "id": 10,
+      "nombre": "Lost Planet",
+      "foto": "img/Lost-planet.jpg",
+      "descripcion": "Lost Planet, ya disponible, adaptado a todas las plataformas.",
+      "precio": 444.4
+    },
+    {
+      "id": 11,
+      "nombre": "The Elder Scrolls V: Skyrim",
+      "foto": "img/Skyrim.webp",
+      "descripcion": "The Elder Scrolls V: Skyrim, ya disponible",
+      "precio": 444.4
+    },
+    {
+      "id": 12,
+      "nombre": "Devil May Cry 3",
+      "foto": "img/Devil-May-Cry 3.webp",
+      "descripcion": "Devil May Cry 3, ya disponible",
+      "precio": 444.4
+    }
+  ]
 }

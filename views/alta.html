@@ -45,8 +45,31 @@
           </div>
           <!-- MAIN -->
       </header>
-<main>
-  <h1>Alta Proyecto Integrador parte 1</h1>
+      <div class="contenedor-alta">
+        <h1 class="contenedor-alta__h1">Para subir productos, llene este formulario</h1>
+      </div>
+    
+<main class="main-alta">
+  <div class="contenedor-form-alta">
+    <form id="form" class="form-alta" >
+      <label class="form-alta__lbl" for="foto">Imagen
+      </label>
+      <input type="file" name="foto" class="form-alta__input form-alta__imagen" required>
+      <label class="form-alta__lbl" for="nombre"> Titulo:
+      </label>
+      <input type="text" name="nombre" class="form-alta__input" required>
+
+      <label class="form-alta__lbl" for="descripcion">Descripcion:
+      </label>
+      <input type="text" name="descripcion" class="form-alta__input" required>
+
+      <label class="form-alta__lbl" for="precio">Precio:
+      </label>
+      <input type="number" name="precio" class="form-alta__input" required>
+
+      <button id="boton" class="form-alta__boton">Enviar</button>
+    </form>
+  </div>
 </main>
     <footer class="footer">
       <div class="footer__contenedor">
@@ -63,6 +86,6 @@
       </div>
     </footer>
   
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="/alta.js"></script>
 </body>
 </html>
