@@ -32,7 +32,7 @@
         position: absolute;
         width: 220px;
         max-width: 220px;
-        height: 13.5rem;
+        height: 14rem;
         color: #BBBBBB;
         background: linear-gradient(0deg,#195173 10%, #22789F 79%);
         transition: transform 1.5s ease-in-out,
@@ -50,12 +50,14 @@
         text-decoration: none;
     }
     &__cart{
-        height: 3rem;
+        height: 2.8rem;
         scale: .9;
+            
         margin-top: .3rem;
         margin-left: 1rem;
         margin-right: 5rem;
         text-decoration: none;
+        top: 1rem;
     }
     &__precio{
         color: #9DEE11;
@@ -67,6 +69,18 @@
             font-size: 1.2rem;
             margin-top: .5rem;
         }
+    }
+    &__heading{
+        display: flex;
+      
+    }
+    &__dots{
+        display: flex;
+        justify-content: end;
+        position: absolute;
+        top: 4px;
+        right: 1rem;
+        scale: 1.2;
     }
     //MOBILE CONFIGURATION
     @media(max-width:576px){

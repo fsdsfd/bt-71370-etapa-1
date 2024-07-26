@@ -54,19 +54,22 @@
     <form id="form" class="form-alta" >
       <label class="form-alta__lbl" for="foto">Imagen
       </label>
-      <input type="file" name="foto" class="form-alta__input form-alta__imagen" required>
+      <small data-error="foto-error" class="form-alta__smalls"></small>
+      <input type="file" name="foto" id="foto" class="form-alta__input form-alta__imagen">
       <label class="form-alta__lbl" for="nombre"> Titulo:
       </label>
-      <input type="text" name="nombre" class="form-alta__input" required>
-
+      <small data-error="nombre-error" class="form-alta__smalls"></small>
+      <input type="text" name="nombre" id="nombre" class="form-alta__input">
       <label class="form-alta__lbl" for="descripcion">Descripcion:
       </label>
-      <input type="text" name="descripcion" class="form-alta__input" required>
+      <small data-error="descripcion-error" class="form-alta__smalls"></small>
 
+      <input type="text" name="descripcion" id="descripcion" class="form-alta__input">
       <label class="form-alta__lbl" for="precio">Precio:
       </label>
-      <input type="number" name="precio" class="form-alta__input" required>
+      <small data-error="precio-error" class="form-alta__smalls"></small>
 
+      <input type="number" name="precio" id="precio" class="form-alta__input">
       <button id="boton" class="form-alta__boton">Enviar</button>
     </form>
   </div>

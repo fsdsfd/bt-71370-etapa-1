@@ -75,6 +75,9 @@
             border-radius: 1.5rem;
 
         }
+        &__smalls{
+            color: rgb(207, 0, 0);
+        }
         //FOCUS
         &__input:focus{
             background-image: radial-gradient( white,#fcf5ff);
@@ -92,7 +95,7 @@
 @media (min-width:576px) {
     .main-alta{
         width: 75%;
-        height: 100%;
+        height: 118%;
         gap: 1rem;
         margin: 20px auto;
         text-align: center;
@@ -108,6 +111,7 @@
     .contenedor-alta{
         display: flex;
         width: 100%;
+        color: #f6f6f6;
         &__h1{
             text-align: center;
             width: 100%;
@@ -152,6 +156,9 @@
         }
         &__imagen{
             border: 1px solid rgb(32, 32, 32);
+        }
+        &__smalls{
+            color: rgb(207, 0, 0);
         }
         //FOCUS
         &__input:focus{

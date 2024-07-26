@@ -83,6 +83,55 @@
       "foto": "img/Devil-May-Cry 3.webp",
       "descripcion": "Devil May Cry 3, ya disponible",
       "precio": 444.4
+    },
+    {
+      "nombre": "",
+      "foto": "",
+      "descripcion": "",
+      "precio": "",
+      "id": 13
+    },
+    {
+      "nombre": "",
+      "foto": "",
+      "descripcion": "",
+      "precio": "",
+      "id": 14
+    },
+    {
+      "nombre": "asd",
+      "foto": "",
+      "descripcion": "",
+      "precio": "",
+      "id": 15
+    },
+    {
+      "nombre": "",
+      "foto": "",
+      "descripcion": "",
+      "precio": "",
+      "id": 16
+    },
+    {
+      "nombre": "",
+      "foto": "",
+      "descripcion": "",
+      "precio": "",
+      "id": 17
+    },
+    {
+      "nombre": "faafs",
+      "foto": "C:\\fakepath\\asfasfa.jpg",
+      "descripcion": "41214",
+      "precio": "124412",
+      "id": 18
+    },
+    {
+      "nombre": "zcxxzc",
+      "foto": "C:\\fakepath\\asfasfa.jpg",
+      "descripcion": "sdadsads",
+      "precio": "123123",
+      "id": 19
     }
   ]
 }
