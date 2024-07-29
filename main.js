@@ -19,7 +19,6 @@ const start = async ()=>{
         const dataProductos = await respuestaBack.json()
         const data = {productos : dataProductos}
         const html = template(data)
-        //console.log(html)
         const contenedorCards = document.querySelector('#contenedor-cards')
         contenedorCards.innerHTML = html 
     } catch (error) {
@@ -27,6 +26,27 @@ const start = async ()=>{
     }
 }
 window.addEventListener('DOMContentLoaded', start)
+
+// User configuration
+const containerUser = document.querySelector('#container-user')
+const getProductos = async ()=>{
+    try {
+        const respuesta = await fetch(url)
+        if (!respuesta.ok) {
+            throw new Error('Error al enviar el producto', respuesta.error)
+        }
+        const data = await respuesta.json()
+        console.log(data)
+        data.forEach(user => {
+            if (user.id > 12) {
+                console.log(user.nombre)
+            }
+        });
+    } catch (error) {
+        console.log('getProductos', error)
+    }
+}
+getProductos()
 // AUDIO CARDS
 // const AudioCards = () => {
 //     document.querySelectorAll('.card__image').forEach(function(image) {
@@ -51,25 +71,7 @@ window.addEventListener('DOMContentLoaded', start)
 
 // Configuración el dots de editar y eliminar a solo productos creados por el usuario
 
-const getDots = async ()=>{
-    try {
-        const urlFetched = await fetch(url)
-        if(!urlFetched.ok){
-            throw new Error('Problema al enviar los datos de la url',urlFetched.status)
-        } 
-        const data = await urlFetched.json()
-        console.log(data)
-        data.forEach(user => {
-            if(user.id < 12){
-                console.log()
-            }
-        });
-    } catch (error) {
-        console.log('getDots', error)
-    }
 
-}
-getDots()
 function ColorHora() {
     let hora = new Date().getHours()
     const elemento = document.querySelector('.body-index');

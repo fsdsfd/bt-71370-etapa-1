@@ -28,6 +28,7 @@
 .nav-bar {
     background-color: rgb(0, 56, 177);
     color: white;
+    width: 100%;
     &__nav-list { /* .nav-bar__nav-list */
         display: flex;
         list-style-type: none;
@@ -52,7 +53,14 @@
         padding: 1rem 2rem;
         text-decoration: none;
     }
-    
+    &__user{
+        display: flex;
+        width: 3rem;
+        padding: .64rem .5rem;
+        position: absolute;
+        right: 0;
+        margin-right: 5rem;
+    }
     @media (max-width: 576px) {
         & { /* .nav-bar */
             display: none;
@@ -66,6 +74,12 @@
     background-color: blueviolet;
     display:flex;
     justify-content:space-around;
+    @keyframes logo {
+        0%   {background-color: rgb(83, 3, 99);}
+        25%  {background-color: rgb(255, 252, 0);}
+        50%  {background-color: rgb(145, 12, 138);}
+        100% {background-color: rgb(83, 3, 99);}
+      }
     @media (max-width:768px) {
         &__logo-container{ //searchbar logo
         
@@ -75,12 +89,7 @@
             animation-duration: 4s;
             animation-iteration-count: infinite;
         }
-        @keyframes logo {
-            0%   {background-color: rgb(83, 3, 99);}
-            25%  {background-color: rgb(255, 252, 0);}
-            50%  {background-color: rgb(145, 12, 138);}
-            100% {background-color: rgb(83, 3, 99);}
-          }
+
     }
     @media (max-width:576px) {
         &__form-container{
