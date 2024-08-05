@@ -1,6 +1,6 @@
 import Handlebars from 'handlebars';
 import './SASS/main.scss'
-const url = 'http://localhost:7777/productos'
+const url = 'http://localhost:7777/productos/'
 const start = async ()=>{
     try {
         const respuesta = await fetch('templates/card.hbs')
@@ -27,26 +27,8 @@ const start = async ()=>{
 }
 window.addEventListener('DOMContentLoaded', start)
 
-// User configuration
-const containerUser = document.querySelector('#container-user')
-const getProductos = async ()=>{
-    try {
-        const respuesta = await fetch(url)
-        if (!respuesta.ok) {
-            throw new Error('Error al enviar el producto', respuesta.error)
-        }
-        const data = await respuesta.json()
-        console.log(data)
-        data.forEach(user => {
-            if (user.id > 12) {
-                console.log(user.nombre)
-            }
-        });
-    } catch (error) {
-        console.log('getProductos', error)
-    }
-}
-getProductos()
+// USER CONFIGURATION
+
 // AUDIO CARDS
 // const AudioCards = () => {
 //     document.querySelectorAll('.card__image').forEach(function(image) {
@@ -84,7 +66,7 @@ function ColorHora() {
         gradiante = 'linear-gradient(0deg,#000000 0%, #1B2838 99%)'
     }
     elemento.style.backgroundImage = gradiante;
-
+    console.log(elemento)
 }
 window.onload = ColorHora;
 
