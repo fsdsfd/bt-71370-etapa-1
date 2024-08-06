@@ -1,6 +1,7 @@
 import './SASS/main.scss'
 document.addEventListener('DOMContentLoaded',()=>{
     const url = 'http://localhost:7777/productos/'
+    const mainAlta = document.querySelector('.main-alta')
     const form = document.querySelector('#form')
     const boton = document.querySelector('#boton')
     const fotoError = document.querySelector('[data-error="foto-error"]')
@@ -18,11 +19,13 @@ document.addEventListener('DOMContentLoaded',()=>{
     const precioName = form[3].name
     const enviarEditBoton = document.createElement('button')
     enviarEditBoton.textContent = 'Editar'
+    enviarEditBoton.classList.add('form-alta__boton')
+    enviarEditBoton.classList.add('form-alta__boton-editar')
+
     enviarEditBoton.style.visibility = 'hidden'
-    form.appendChild(enviarEditBoton)
     function validarFoto() {
         if (fotoInput.value === '') {
-            debugger
+            
             fotoError.textContent = 'Complete este campo'
             return fotoError.textContent
         }else{
@@ -32,19 +35,23 @@ document.addEventListener('DOMContentLoaded',()=>{
     }
      function validarTitulo() {
          if (tituloInput.value.trim() === '') {
-            nombreError.textContent = 'Complete este campo' 
+            nombreError.textContent = 'Complete este campo'
+             
             return nombreError.textContent
         }else{
             nombreError.textContent === ''
+            
             return nombreError.textContent
          }
      }
      function validarDescripcion() {
         if (descripcionInput.value.trim() === '') {
             descripcionError.textContent = 'Complete este campo'
+            debugger
             return descripcionError.textContent
         }else{
             descripcionError.textContent === ''
+           
             return descripcionError.textContent
         }
      }
@@ -134,19 +141,33 @@ document.addEventListener('DOMContentLoaded',()=>{
                 const editarBoton = document.createElement('button')
                 deleteBoton.textContent = 'Eliminar'
                 deleteBoton.addEventListener('click',()=>{
-                    eliminarProducto(producto.id)
+                    const deletePregunta = confirm('Está seguro de que quiere eliminar este elemento?')
+                    if(deletePregunta){
+                        eliminarProducto(producto.id)
+                        const h2 = document.createElement('h2')
+                        h2.textContent = 'Se ha editado el producto exitosamente'
+                        h2.classList.add('producto-send')
+                        mainAlta.appendChild(h2)
+                        setTimeout(() => {
+                        h2.remove()
+                        }, 2000);
+                    }
                     debugger
                     console.log(producto.id)
                 })
                 editarBoton.textContent = 'Editar'
                 editarBoton.classList.add('container-botones__boton')
                 deleteBoton.classList.add('container-botones__boton')
-                editarBoton.addEventListener('click',()=>{
+                editarBoton.addEventListener('click',(e)=>{
+                    e.preventDefault()
+                    boton.remove()
+                    form.appendChild(enviarEditBoton)
                     tituloInput.value = producto.nombre
                     descripcionInput.value = producto.descripcion
                     precioInput.value = producto.precio
                     enviarEditBoton.style.visibility = 'visible'
-                    enviarEditBoton.addEventListener('click',()=>{
+                    enviarEditBoton.addEventListener('click',(e)=>{
+                        e.preventDefault()
                         const resultadoEditado = validarTitulo() === '' && validarDescripcion() === '' && validarPrecio() === ''
                         console.log(producto.id)
                         if (resultadoEditado) {
@@ -160,7 +181,14 @@ document.addEventListener('DOMContentLoaded',()=>{
                             }
                         editarProducto(producto.id, productoEditado)
                         debugger
-                        
+                        const h2 = document.createElement('h2')
+                        h2.textContent = 'Se ha editado el producto exitosamente'
+                        h2.classList.add('producto-send')
+                        mainAlta.appendChild(h2)
+                        setTimeout(() => {
+                        h2.remove()
+                        }, 2000);
+            
                     }else{
                             console.log('Los inputs no tienen información')
                         }
@@ -178,11 +206,13 @@ document.addEventListener('DOMContentLoaded',()=>{
         }
     }
     getAllProducts()
-    boton.addEventListener('click',()=>{
+    boton.addEventListener('click',(e)=>{
+        e.preventDefault()
         console.log(fotoInput.value)
         console.log(descripcionInput.value)
         console.log(precioInput.value)    
-        const resultado = validarTitulo() === '' && validarDescripcion() === '' && validarPrecio() === ''
+        const resultado = validarFoto() === '' && validarTitulo() === '' && validarDescripcion() === '' && validarPrecio() === ''
+        debugger
         if (resultado) {
             debugger
             console.log()
@@ -193,9 +223,19 @@ document.addEventListener('DOMContentLoaded',()=>{
                 [descripcionName] : descripcionInput.value.trim(),
                 [precioName] : precioInput.value.trim()
             }
+            
             createProductos(producto)
+            const h2 = document.createElement('h2')
+            h2.textContent = 'Se ha enviado el producto exitosamente'
+            h2.classList.add('producto-send')
+            mainAlta.appendChild(h2)
+            setTimeout(() => {
+            h2.remove()
+            }, 2000);
+
             const h3 = document.createElement('h3')
-            h3.textContent = tituloInput.value.trim() 
+            h3.textContent = tituloInput.value.trim()
+
         }else{
             debugger
             console.log('Los inputs no tienen información')

@@ -51,38 +51,39 @@
     },
     {
       "id": 9,
-      "nombre": "Sekiro: Shadows Die Twice",
-      "foto": "img/Sekiro.jpg",
-      "descripcion": "Sekiro: Shadows Die Twice, ya disponible en todas las plataformas de streaming",
-      "precio": 444.4
+      "foto": "img/Infamous-2.jpg",
+      "nombre": "Infamous 2",
+      "descripcion": "Infamous 2, ya disponible.",
+      "precio": 22
+
     },
     {
-      "id": 9,
+      "id": 10,
       "nombre": "Rust",
       "foto": "img/Rust.avif",
       "descripcion": "Read Dead Redemption 2, ya disponible.",
       "precio": 444.4
     },
     {
-      "id": 10,
+      "id": 11,
       "nombre": "Lost Planet",
       "foto": "img/Lost-planet.jpg",
       "descripcion": "Lost Planet, ya disponible, adaptado a todas las plataformas.",
       "precio": 444.4
     },
     {
-      "id": 11,
+      "id": 12,
       "nombre": "The Elder Scrolls V: Skyrim",
       "foto": "img/Skyrim.webp",
       "descripcion": "The Elder Scrolls V: Skyrim, ya disponible",
       "precio": 444.4
     },
     {
-      "foto": "",
+      "id": 13,
+      "foto": "img/devil-may-cry-2.webp",
       "nombre": "Devil May Cry 2",
       "descripcion": "Devil May Cry 2, ya disponible",
-      "precio": "22",
-      "id": 12
+      "precio": 22
     }
   ]
 }

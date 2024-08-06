@@ -3,7 +3,7 @@ import './SASS/main.scss'
 const url = 'http://localhost:7777/productos/'
 const start = async ()=>{
     try {
-        const respuesta = await fetch('templates/card.hbs')
+        const respuesta = await fetch('/img/templates/card.hbs')
         if (!respuesta) {
             throw new Error('Error al enviar la card', respuesta.status)
         }

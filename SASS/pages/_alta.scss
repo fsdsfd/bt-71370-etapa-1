@@ -3,6 +3,7 @@
     background-position: center;
     background-size: cover;
 }
+
 @media(max-width:576px){
     .contenedor-alta{
         width: 100%;
@@ -149,7 +150,7 @@
         border-radius: 1.8rem;
         &__lbl{
             margin-top: 2rem;
-        
+            font-size: 1.2rem;
         }
         &__input{
             align-self: center;
@@ -157,17 +158,18 @@
             height: 2rem;
             border-radius: 2rem;
             margin: 1.5rem;
+            border: .5px solid #151516;
          }
         &__boton{
             
             align-self:center;
             font-size: 1.17rem;
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
             width: 45%;
             padding: .8rem;
             background-color: #D63D01;
             border-radius: 1.5rem;
-    
+            border: .5px solid #151516;
         }
         &__imagen{
             border: 1px solid rgb(32, 32, 32);
@@ -208,13 +210,28 @@
         &__boton{
             width: 10%;
             position: relative;
-            bottom: 1.67rem;
+            bottom: 1.66rem;
             margin-right: 1rem;
             background-color: #e94403;
-            border-radius: 5px;
+            border-radius: 9px;
+            border: .1px solid white;
             color: white;
             font-size: 1rem;
             padding: .2rem;
+            cursor: pointer;
         }
     }
+.producto-send{
+    background-image: url(/img/gif-fondo-1.gif);
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    text-align: center;
+    bottom: 12rem;
+    z-index: 1;
+    left: 0;
+    width: 100%;
+    color: white;
+    font-size: 5rem;
+}
 }
