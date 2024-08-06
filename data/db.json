@@ -4,7 +4,7 @@
       "foto": "img/Dark-souls-3.webp",
       "nombre": "Dark Souls 3",
       "descripcion": "El videojuego del genero Souls más vendido, Dark Souls 3, ya disponible",
-      "precio": "45",
+      "precio": 45,
       "id": 1
     },
     {
@@ -12,49 +12,49 @@
       "nombre": "Yakuza 0",
       "foto": "img/yakuza-0.webp",
       "descripcion": "Yakuza 0, ya disponible",
-      "precio": 333.3
+      "precio": 32
     },
     {
       "id": 3,
       "nombre": "Tekken 1",
       "foto": "img/tekken-1.jpg",
       "descripcion": "Tekken 1, el videojuego de combate, ya disponible",
-      "precio": 444.4
+      "precio": 43
     },
     {
       "id": 4,
       "nombre": "Mortal Kombat 1 ",
       "foto": "img/mortal-kombat-1.jpg",
       "descripcion": "Mortal kombat 1 ya disponible",
-      "precio": 444.4
+      "precio": 1.4
     },
     {
       "id": 5,
       "nombre": "Read Dead Redemption 2",
       "foto": "img/read-dead-redemption-2.avif",
       "descripcion": "Read Dead Redemption 2, ya disponible",
-      "precio": 444.4
+      "precio": 23
     },
     {
       "id": 6,
       "nombre": "Grand Theft Auto 6",
       "foto": "img/gta-6.avif",
       "descripcion": "Grand Theft Auto 6, ya disponible",
-      "precio": 444.4
+      "precio": 22
     },
     {
       "id": 8,
       "nombre": "Hollow Knight: Silksong",
       "foto": "img/Hollow-knight-silksong.webp",
       "descripcion": "Hollow Knight: Silksong, ya disponible",
-      "precio": 444.4
+      "precio": 42
     },
     {
       "id": 9,
       "foto": "img/Infamous-2.jpg",
       "nombre": "Infamous 2",
       "descripcion": "Infamous 2, ya disponible.",
-      "precio": 22
+      "precio": 99
 
     },
     {
@@ -62,28 +62,28 @@
       "nombre": "Rust",
       "foto": "img/Rust.avif",
       "descripcion": "Read Dead Redemption 2, ya disponible.",
-      "precio": 444.4
+      "precio": 21
     },
     {
       "id": 11,
       "nombre": "Lost Planet",
       "foto": "img/Lost-planet.jpg",
       "descripcion": "Lost Planet, ya disponible, adaptado a todas las plataformas.",
-      "precio": 444.4
+      "precio": 23
     },
     {
       "id": 12,
       "nombre": "The Elder Scrolls V: Skyrim",
       "foto": "img/Skyrim.webp",
       "descripcion": "The Elder Scrolls V: Skyrim, ya disponible",
-      "precio": 444.4
+      "precio": 32
     },
     {
       "id": 13,
       "foto": "img/devil-may-cry-2.webp",
       "nombre": "Devil May Cry 2",
       "descripcion": "Devil May Cry 2, ya disponible",
-      "precio": 22
+      "precio": 12
     }
   ]
 }
